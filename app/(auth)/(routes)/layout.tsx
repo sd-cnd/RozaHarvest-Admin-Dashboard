@@ -62,6 +62,8 @@
 //     )
 // }
 
+import Image from "next/image"
+
 export default function AuthLayout({
     children
 }: {
@@ -72,7 +74,7 @@ export default function AuthLayout({
             <section className="bg-white">
                 <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
                     <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
-                        <img
+                        <Image
                             alt="Pattern"
                             src="/navscreen.gif"
                             className="hidden xl:block h-full w-full object-cover bg-no-repeat"
